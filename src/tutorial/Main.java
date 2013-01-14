@@ -16,7 +16,7 @@ public class Main {
         boolean allOkay = true;
         try{
         	em.getTransaction().begin();
-            for (int i = 0; i < 1_000_010; i++) {
+            for (int i = 0; i < 1000010; i++) {
                 Point p = new Point(i, i);
                 em.persist(p);
             }
